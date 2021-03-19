@@ -1,0 +1,31 @@
+// Place all the styles related to the bookers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.table {
+    width: 90%;
+    margin: 0 10px 0 10px;
+}
+
+th:first-child {
+    width: 15%;
+}
+th:nth-child(2) {
+    width: 40%;
+}
+th:nth-child(3) {
+    width: 25%;
+}
+
+tr.contents {
+   text-align: left;
+   font-family: serif;
+}
+
+.content {
+    padding: 5px 10px 5px 5px;
+}
+
+.link a {
+    color: black;
+    margin-right: 15px;
+}

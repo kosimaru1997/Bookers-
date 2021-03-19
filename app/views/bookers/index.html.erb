@@ -1,0 +1,24 @@
+<div class="main">
+<div class="title"><h1>Bookes</h1></div>
+
+  <table class="table">
+    <tr class="book-table">
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+    <% @books.each do |book| %>
+    <tr class="contents">
+        <th class="content"><%= book.title %></th>
+        <th class="content"><%= book.body %></th>
+        <th class="link">
+          <%= link_to("Show","/") %>
+          <%= link_to("Edit","/") %>
+          <%= link_to("Destroy","/") %>
+        </th>
+    </tr>
+    <% end %>
+  </table>
+  
+  
+
+</div>
