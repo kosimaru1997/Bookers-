@@ -10,10 +10,11 @@ class BookersController < ApplicationController
   def create
     book = Book.new(book_params)
     book.save
-    redirect_to("/")
+    redirect_to("/bookers/#{book.id}")
   end
 
   def show
+    @book = Book.find(params[:id])
   end
 
   def edit

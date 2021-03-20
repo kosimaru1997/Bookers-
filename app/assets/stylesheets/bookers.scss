@@ -10,7 +10,7 @@ th:first-child {
     width: 15%;
 }
 th:nth-child(2) {
-    width: 40%;
+    width: 50%;
 }
 th:nth-child(3) {
     width: 25%;
@@ -41,4 +41,9 @@ tr.contents {
 
 .btn {
     margin-top: 10px;
+}
+
+.show p {
+    font-size: 16px;
+    margin: 33px;
 }
