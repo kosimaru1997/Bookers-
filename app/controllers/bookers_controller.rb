@@ -1,6 +1,7 @@
 class BookersController < ApplicationController
   def index
     @books = Book.all
+    @book = Book.new
   end
   
   def new
@@ -18,10 +19,17 @@ class BookersController < ApplicationController
   end
 
   def edit
+    @book = Book.find(params[:id])
+  end
+  
+  def update
+    book = Book.find(params[:id])
+    book.update(book_params)
+    redirect_to("/bookers/#{book.id}")
   end
   
   private
   def book_params
-    params.permit(:title,:body)
+    params.require(:book).permit(:title, :body)
   end
 end
