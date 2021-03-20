@@ -13,7 +13,7 @@
         <th class="link">
           <%= link_to("Show", "/bookers/#{book.id}") %>
           <%= link_to("Edit", "/bookers/#{book.id}/edit") %>
-          <%= link_to("Destroy","/") %>
+          <%= link_to("Destroy", "/bookers/#{book.id}", method: :delete, data: {confirm: "Are you sure？"})  %>
         </th>
     </tr>
     <% end %>

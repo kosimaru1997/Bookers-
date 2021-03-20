@@ -28,6 +28,12 @@ class BookersController < ApplicationController
     redirect_to("/bookers/#{book.id}")
   end
   
+  def destroy
+    book = Book.find(params[:id])
+    book.destroy
+    redirect_to("/bookers")
+  end
+  
   private
   def book_params
     params.require(:book).permit(:title, :body)
