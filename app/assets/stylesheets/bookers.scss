@@ -48,3 +48,34 @@ tr.contents {
     font-size: 16px;
     margin: 33px;
 }
+
+.alert {
+    color:#262626; 
+    background:#FFEBE8;
+    text-align: left;
+    border: 2px solid #990000;
+    padding-bottom: 12px; 
+    font-weight: 850;
+    width: 60%;
+    margin: 0;
+}
+
+.alert-message {
+    height: 30px;
+    width: auot;
+    margin-bottom: 12px;
+    background-color: red;
+    border-bottom: 2px solid #990000;
+}
+
+.alert ul {
+    margin: 0;
+    font-family: fangsong;
+    font-size: 12px;
+}
+
+.alert h3 {
+    line-height: 30px;
+    color: white;
+    margin: 0 10px;
+}
